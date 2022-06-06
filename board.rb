@@ -43,7 +43,7 @@ class Board
   end
 
   def valid_position?(position)
-    @positions_played[position] < 1
+    @positions[position - 1] == position
   end
 
   def game_win?(shape)
@@ -63,6 +63,6 @@ class Board
   end
 
   def game_tie?
-    @positions_played.all? { |count| count == 1 }
+    @positions.all? { |position| position =~ /[^0-9]/}
   end
 end

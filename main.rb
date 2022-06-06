@@ -32,6 +32,7 @@ until play_game == "q"
       break
     elsif game.game_tie?
       puts "Tie game!\n"
+      game.show_board
       break
     end
 
@@ -45,6 +46,7 @@ until play_game == "q"
       break
     elsif game.game_tie?
       puts "Tie game!\n"
+      game.show_board
       break
     end
 
