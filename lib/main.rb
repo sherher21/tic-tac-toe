@@ -30,7 +30,7 @@ until play_game == "q"
       player1.win_count += 1
       puts "Player #{player1.name} wins!\n"
       break
-    elsif game.game_tie?
+    elsif game.board_full?
       puts "Tie game!\n"
       game.show_board
       break
@@ -44,7 +44,7 @@ until play_game == "q"
       player2.win_count += 1
       puts "Player #{player2.name} wins!\n"
       break
-    elsif game.game_tie?
+    elsif game.board_full?
       puts "Tie game!\n"
       game.show_board
       break

@@ -29,6 +29,6 @@ class Player
   end
 
   def player_win?(game)
-    game.game_win?(@shape)
+    game.game_over?(@shape)
   end
 end
